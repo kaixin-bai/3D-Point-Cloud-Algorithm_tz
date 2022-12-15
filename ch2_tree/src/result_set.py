@@ -8,7 +8,7 @@ class DistIndex:
         self.distance = distance
         self.index = index
 
-    def __lt__(self, other):
+    def __lt__(self, other):  # python装饰器用法，__lt__是用来做比较的，比如x<y 调用 x.__lt__(y)
         return self.distance < other.distance
 
 
